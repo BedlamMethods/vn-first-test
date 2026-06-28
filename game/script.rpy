@@ -21,7 +21,7 @@ label start:
 
     n "Let's always be together, [player_name]."
 
-    m "*nods.* Yes, I promise."
+    m "*nods.* Yes, I promise." # Player Speech
 
     narrator "A promise was whispered on the school rooftop, just before the {color=#ff0000}Estimated Night.{/color}"
 
