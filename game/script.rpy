@@ -1,0 +1,28 @@
+﻿define  n = Character("Noriko", color="#27963f")
+define m = Character("[player_name]", who_color="#00aaff")
+define narrator = Character(None)
+
+label start:
+    stop music fadeout 1.0
+    scene bg empty
+    "What do you want to be called?"
+    menu:
+        
+        "Enter your name":
+            $ player_name = renpy.input("Enter your name:", length=15).strip()
+            if not player_name:
+                $ player_name = "Meikyo"
+
+        "Use default name (Meikyo)":
+            $ player_name = "Meikyo"
+
+    scene bg roof
+    show noriko idle at left
+
+    n "Let's always be together, [player_name]."
+
+    m "*nods.* Yes, I promise."
+
+    narrator "A promise was whispered on the school rooftop, just before the {color=#ff0000}Estimated Night.{/color}"
+
+    return
