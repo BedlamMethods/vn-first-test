@@ -35,13 +35,13 @@ label start:
     
 label estimated_night:
     scene bg street
-    show noriko happy
+    show noriko smile
     n "thank you for walking me home"
 
     return
 label grave_scene:
     scene bg graveyard
-    show noriko sad
+    show noriko sad1
     n "you promised to always be with me, but now you're gone."
     return
 label minigame:
