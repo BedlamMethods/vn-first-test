@@ -24,5 +24,27 @@ label start:
     m "*nods.* Yes, I promise." # Player Speech
 
     narrator "A promise was whispered on the school rooftop, just before the {color=#ff0000}Estimated Night.{/color}"
+    menu:
 
+        "start the Estimated Night.":
+            jump estimated_night
+        "start Grave scene.":
+            jump grave_scene
+        "mini game":
+            jump minigame  
+    
+label estimated_night:
+    scene bg street
+    show noriko happy
+    n "thank you for walking me home"
+
+    return
+label grave_scene:
+    scene bg graveyard
+    show noriko sad
+    n "you promised to always be with me, but now you're gone."
+    return
+label minigame:
+    scene bg minigame
+    
     return
